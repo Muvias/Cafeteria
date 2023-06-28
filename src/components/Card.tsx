@@ -9,7 +9,7 @@ interface InitialState {
 
 export function Card(cardDetails: InitialState) {
     return (
-        <div className="flex flex-col gap-4 w-1/3">
+        <div className="flex flex-col gap-4 md:w-1/3">
             <Image src={cardDetails.imageUrl} alt={cardDetails.imgDescription} className="aspect-video" />
 
             <h3 className="text-2xl font-semibold">
