@@ -1,15 +1,15 @@
 export function Contact() {
     return (
-        <section className="flex justify-between items-center gap-4 h-[50vh] px-48">
-            <div className="max-w-[50%] w-full">
+        <section className="flex md:flex-row flex-col justify-between items-center gap-12 md:gap-6 py-16 px-6 md:px-48 md:py-24">
+            <div className="md:max-w-[50%] w-full">
                 <h2 className="text-3xl font-semibold mb-4">Entre em contato conosco</h2>
                 <p>Tem alguma dúvida ou sugestão? Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
             </div>
 
-            <div className="max-w-[50%] w-full">
+            <div className="md:max-w-[50%] w-full">
                 <form className="">
-                    <div className="flex w-full gap-4">
-                        <label htmlFor="" className="flex flex-col w-1/2">
+                    <div className="flex flex-wrap w-full gap-4">
+                        <label htmlFor="" className="flex flex-col flex-1 w-1/2">
                             Nome
                             <input
                                 type="text"
@@ -17,7 +17,7 @@ export function Contact() {
                             />
                         </label>
 
-                        <label htmlFor="" className="flex flex-col w-1/2">
+                        <label htmlFor="" className="flex flex-col flex-1 w-1/2">
                             Email
                             <input
                                 type="text"

@@ -18,7 +18,7 @@ export function Main() {
                 </div>
             </div>
 
-            <div className='flex flex-col justify-center items-center gap-8 w-full px-6 py-8 md:px-0 sm:py-16 bg-[#F3F4F6]'>
+            <div className='flex flex-col justify-center items-center gap-8 w-full px-6 py-16 md:px-0 sm:py-16 bg-[#F3F4F6]'>
                 <p className='md:w-1/2 text-3xl text-center'>
                     "A Cafeteria é um lugar incrível para tomar um café delicioso. O ambiente é aconchegante e o atendimento é excepcional. Recomendo a todos que estão em São Paulo e procuram um bom café!"
                 </p>
