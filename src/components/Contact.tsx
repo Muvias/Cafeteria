@@ -1,13 +1,24 @@
+'use client'
+
+import { FormEvent } from "react";
+
 export function Contact() {
+    function handleSubmit(e: FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+    };
+
     return (
-        <section className="flex md:flex-row flex-col justify-between items-center gap-12 md:gap-6 py-16 px-6 md:px-48 md:py-24">
-            <div className="md:max-w-[50%] w-full">
+        <section className="flex lg:flex-row flex-col justify-between gap-12 lg:gap-6 py-16 px-6 lg:px-48 lg:py-24">
+            <div className="lg:max-w-[50%] w-full">
                 <h2 className="text-3xl font-semibold mb-4">Entre em contato conosco</h2>
                 <p>Tem alguma dúvida ou sugestão? Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
             </div>
 
-            <div className="md:max-w-[50%] w-full">
-                <form className="">
+            <div className="lg:max-w-[50%] w-full">
+                <form
+                    onSubmit={handleSubmit}
+                    className="flex flex-col"
+                >
                     <div className="flex flex-wrap w-full gap-4">
                         <label htmlFor="" className="flex flex-col flex-1 w-1/2">
                             Nome
@@ -36,6 +47,13 @@ export function Contact() {
                             />
                         </label>
                     </div>
+
+                    <button
+                        type="submit"
+                        className="w-fit self-end px-8 py-1 mt-4 bg-[#D2691E] hover:opacity-[0.9] transition-colors"
+                    >
+                        Enviar
+                    </button>
 
                 </form>
             </div >

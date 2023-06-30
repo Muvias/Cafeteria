@@ -7,10 +7,10 @@ import peopleTalking from '../assets/peopleTalking.jpg';
 
 export function Services() {
     return (
-        <section className="flex flex-col justify-center gap-8 md:px-48 md:py-24 px-6 py-16">
+        <section className="flex flex-col justify-center gap-8 lg:px-48 lg:py-24 px-6 py-16">
             <h2 className="text-4xl font-semibold">Nossos serviços</h2>
 
-            <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex flex-col lg:flex-row gap-8">
                 <Card
                     imageUrl={cafe}
                     imgDescription="UmTexto"
