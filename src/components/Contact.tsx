@@ -24,7 +24,7 @@ export function Contact() {
                             Nome
                             <input
                                 type="text"
-                                className="h-7 rounded-sm border border-gray-200 bg-gray-100"
+                                className="h-7 px-2 py-4 rounded-sm border text-gray-500 border-gray-200 bg-gray-100"
                             />
                         </label>
 
@@ -32,7 +32,7 @@ export function Contact() {
                             Email
                             <input
                                 type="text"
-                                className="h-7 rounded-sm border border-gray-200 bg-gray-100"
+                                className="h-7 px-2 py-4 rounded-sm border text-gray-500 border-gray-200 bg-gray-100"
                             />
                         </label>
                     </div>
@@ -43,7 +43,7 @@ export function Contact() {
                             <textarea
                                 name="content"
                                 spellCheck={false}
-                                className="w-full flex-1 p-2 leading-relaxed rounded border-0 bg-gray-100 focus:ring-0"
+                                className="w-full flex-1 px-2 py-4 leading-relaxed rounded border-0 text-gray-500 bg-gray-100 focus:ring-0"
                             />
                         </label>
                     </div>

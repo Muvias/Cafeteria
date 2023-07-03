@@ -14,7 +14,7 @@ export function Main() {
                     <h2 className='sm:text-6xl text-5xl font-semibold'>Desperte o seu paladar</h2>
                     <p className='text-lg font-semibold'>Experimente os nossos cafés especiais e sinta o sabor autêntico da cidade.</p>
 
-                    <button className='sm:w-fit w-full py-2 px-4 text-lg font-semibold rounded-sm bg-[#D2691E] hover:opacity-[0.9] transition-colors'>Visite-nos</button>
+                    <a href='#location' className='sm:w-fit w-full py-2 px-4 text-lg font-semibold rounded-sm bg-[#D2691E] hover:opacity-[0.9] transition-colors'>Visite-nos</a>
                 </div>
             </div>
 
