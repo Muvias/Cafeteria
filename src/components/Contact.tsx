@@ -1,10 +1,13 @@
 'use client'
 
 import { FormEvent } from "react";
+import { toast } from 'react-toastify';
 
 export function Contact() {
     function handleSubmit(e: FormEvent<HTMLFormElement>) {
         e.preventDefault();
+
+        toast.success("Email enviado com sucesso!");
     };
 
     return (
@@ -20,32 +23,25 @@ export function Contact() {
                     className="flex flex-col"
                 >
                     <div className="flex flex-wrap w-full gap-4">
-                        <label htmlFor="" className="flex flex-col flex-1 w-1/2">
-                            Nome
-                            <input
-                                type="text"
-                                className="h-7 px-2 py-4 rounded-sm border text-gray-500 border-gray-200 bg-gray-100"
-                            />
-                        </label>
+                        <div className="flex flex-col flex-1 w-1/2">
+                            <label htmlFor="name">Nome</label>
+                            <input type="text" id="name" className="h-7 px-2 py-4 rounded-sm border text-gray-500 border-gray-200 bg-gray-100" />
+                        </div>
 
-                        <label htmlFor="" className="flex flex-col flex-1 w-1/2">
-                            Email
-                            <input
-                                type="text"
-                                className="h-7 px-2 py-4 rounded-sm border text-gray-500 border-gray-200 bg-gray-100"
-                            />
-                        </label>
+                        <div className="flex flex-col flex-1 w-1/2">
+                            <label htmlFor="email">Email</label>
+                            <input type="text" id="email" className="h-7 px-2 py-4 rounded-sm border text-gray-500 border-gray-200 bg-gray-100" />
+                        </div>
                     </div>
 
-                    <div>
-                        <label htmlFor="" className="flex flex-col w-full">
-                            Mensagem
-                            <textarea
-                                name="content"
-                                spellCheck={false}
-                                className="w-full flex-1 px-2 py-4 leading-relaxed rounded border-0 text-gray-500 bg-gray-100 focus:ring-0"
-                            />
-                        </label>
+                    <div className="flex flex-col w-full">
+                        <label htmlFor="message">Mensagem</label>
+                        <textarea
+                            name="content"
+                            spellCheck={false}
+                            id="message"
+                            className="w-full flex-1 px-2 py-4 leading-relaxed rounded border-0 text-gray-500 bg-gray-100 focus:ring-0"
+                        />
                     </div>
 
                     <button
